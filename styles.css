@@ -1,0 +1,201 @@
+@font-face {
+  font-family: "MaPolice";
+  src: url("police/Segoe\ UI\ Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "MaPolice";
+  src: url("police/Segoe\ UI.ttf") format("truetype");
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "MaPolice", sans-serif;
+  background: linear-gradient(to right, #94928b, #f4f4f4);
+}
+
+header {
+  color: #fff;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.icon-button {
+  text-decoration: none;
+  background-color: #333;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  margin: 5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+.icon-button:hover {
+  background-color: #555;
+  cursor: pointer;
+}
+
+.icon-button i {
+  color: #f4f5f5;
+  font-size: 20px;
+}
+
+.img {
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img:hover {
+  transform: scale(1.04);
+  box-shadow: 0 0 15px rgb(0, 0, 0.2);
+}
+
+#avatar {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+section {
+  width: 100%;
+  max-width: 960px;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+section:hover {
+  transform: scale(1.03);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+section h2 {
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 0px;
+  margin: 0;
+}
+
+section p,
+section div {
+  margin-bottom: 0px;
+  line-height: 1.6;
+}
+
+.menu-burger {
+  cursor: pointer;
+  display: inline-block;
+  position: fixed;
+  top: px;
+  left: 10px;
+  z-index: 1000;
+}
+
+.barre {
+  width: 35px;
+  height: 5px;
+  background-color: #ffffff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.nav-menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+.extand {
+  visibility: visible;
+  opacity: 1;
+}
+
+.nav-menu a {
+  padding: 40px 15px;
+  text-decoration: none;
+  font-size: 22px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.nav-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 0px;
+}
+
+body.dark-mode {
+  background: #333;
+  color: #191b1b;
+}
+
+.nav-menu.dark-mode a {
+  color: #f4f5f5;
+}
+
+section.dark-mode {
+  background: #454545;
+}
+
+.dark-mode-switch {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+.radio-inline {
+  display: flex;
+  gap: 0px 10px;
+  align-items: center;
+  margin: 10px 0px;
+}
+input[type="radio"] {
+  margin: 0;
+}

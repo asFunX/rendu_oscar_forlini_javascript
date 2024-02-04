@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <!-- Début du document HTML, langage spécifié comme français -->
+
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Définit le jeu de caractères en UTF-8 pour un affichage correct des caractères -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Assure une bonne mise en page sur les appareils mobiles -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Lien vers une feuille de style CSS externe -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <!-- Intègre Font Awesome pour les icônes -->
+    <title>CV Oscar Forlini</title>
+    <!-- Structure de base du menu burger -->
+    <!-- Titre de la page, affiché dans l'onglet du navigateur -->
+  </head>
+
+  <body>
+    <nav>
+      <ul class="nav-menu" id="nav-menu">
+        <!-- Barre de navigation avec des liens vers différentes pages -->
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="about.html">À Propos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="menu-burger" id="burger">
+      <div class="barre"></div>
+      <div class="barre"></div>
+      <div class="barre"></div>
+    </div>
+
+    <main>
+      <div class="dark-mode-switch">
+        <label>
+          <input type="checkbox" id="darkModeToggle" />
+          <span>DarkMod</span>
+        </label>
+      </div>
+
+      <section id="avatar">
+        <div class="img">
+          <img src="OscarPhotoProfilStyle.png" />
+          <!-- Image de profil -->
+        </div>
+        <h1>Oscar Forlini</h1>
+      </section>
+
+      <section class="competences">
+        <h2>Compétences</h2>
+        <!-- Section des compétences listées -->
+        <ul>
+          <li>Développement web (HTML, CSS, JavaScript, etc.)</li>
+          <li>Gestion de projet</li>
+          <li>Analyse de données</li>
+          <li>Ancien joueur esportif de Rocket league</li>
+        </ul>
+      </section>
+
+      <section class="experience">
+        <h2>Expérience Professionnelle</h2>
+        <!-- Section de l'expérience professionnelle -->
+        <div>
+          <h3>Unit Image</h3>
+          <p>Stagiaire 2021</p>
+          <p>
+            Récemment, j'ai eu l'opportunité enrichissante d'effectuer un stage
+            de deux semaines au sein d'une entreprise spécialisée dans la 3D.
+            Cette expérience m'a permis de plonger dans le monde professionnel
+            et d'acquérir des compétences pratiques complémentaires à mes
+            études. Durant ce stage, j'ai été impliqué dans divers projets, me
+            permettant de développer des compétences en gestion de projet et
+            d'appréhender de plus près les aspects techniques et créatifs du
+            travail en 3D. Cette immersion a été une occasion précieuse de
+            comprendre le fonctionnement interne d'une entreprise de 3D et de
+            participer activement à la réalisation de projets.
+          </p>
+          <!-- Description de l'expérience professionnelle -->
+        </div>
+      </section>
+
+      <section class="formation">
+        <h2>Formation</h2>
+        <!-- Section de formation académique -->
+        <div>
+          <h3>IIM Digital School & Saint Thomas de Villeuneuve</h3>
+          <p>Baccalauréat Général - 2023</p>
+          <p>Spécialité- Physique Chimie & NSI & Maths Complémentaire</p>
+        </div>
+      </section>
+
+      <section class="Portfolio">
+        <h2>Mon niveau de langue</h2>
+        <!-- Section sur les compétences linguistiques -->
+        <h3>Anglais niveau c1</h3>
+        <div>
+          <img src="drapeau-anglais.jpg" width="300" height="200" />
+          <!-- Image symbolisant la maîtrise de la langue anglaise -->
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a href="https://www.facebook.com" class="icon-button">
+        <i class="fa-brands fa-facebook" style="color: #f7f7f7"></i>
+        <!-- Lien vers Facebook avec icône -->
+      </a>
+      <a href="https://twitter.com" class="icon-button">
+        <i class="fa-brands fa-twitter" style="color: #f4f5f5"></i>
+        <!-- Lien vers Twitter avec icône -->
+      </a>
+      <a href="https://instagram.com" class="icon-button">
+        <i class="fa-brands fa-instagram" style="color: #fffefe"></i>
+        <!-- Lien vers Instagram avec icône -->
+      </a>
+      <p>© 2023 Oscar Forlini</p>
+      <!-- Droits d'auteur et année -->
+    </footer>
+    <script src="menu.js"></script>
+  </body>
+</html>

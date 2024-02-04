@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <!-- Début du document HTML, spécifiant que la langue est le français -->
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Assure une bonne mise en page sur les appareils mobiles -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Lien vers un fichier CSS externe pour le style de la page -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <!-- Intègre Font Awesome pour les icônes -->
+    <nav>
+      <ul class="nav-menu" id="nav-menu">
+        <!-- Barre de navigation avec des liens vers différentes pages -->
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="about.html">À Propos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="menu-burger" id="burger">
+      <div class="barre"></div>
+      <div class="barre"></div>
+      <div class="barre"></div>
+    </div>
+  </head>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 0px;
+    }
+    h1 {
+      color: #333;
+    }
+    form {
+      background: #fff;
+      padding: 150px;
+      border-radius: 100px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    label {
+      display: block;
+      margin-bottom: 0px;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      border-radius: 40px;
+      box-sizing: border-box; /* Ensures padding doesn't affect width */
+    }
+    .error {
+      border-color: red;
+    }
+    .error-message {
+      color: red;
+      font-size: 0.8em;
+      margin-top: -15px;
+      margin-bottom: 10px;
+      display: none;
+    }
+    button {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1em;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+
+  <body>
+    <main>
+      <h1>Formulaire</h1>
+      <form id="searchForm" novalidate>
+        <label for="nom">Nom</label>
+        <input type="text" id="nom" name="nom" required />
+        <div class="error-message" id="nom-error"></div>
+
+        <label for="prenom">Prénom</label>
+        <input type="text" id="prenom" name="prenom" required />
+        <div class="error-message" id="prenom-error"></div>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+        <div class="error-message" id="email-error"></div>
+
+        <h3>Genre</h3>
+        <div class="radio-inline">
+          <input type="radio" id="homme" name="genre" value="homme" />
+          <label for="homme">Homme</label>
+        </div>
+        <div class="radio-inline">
+          <input type="radio" id="femme" name="genre" value="femme" />
+          <label for="femme">Femme</label>
+        </div>
+        <div class="radio-inline">
+          <input type="radio" id="autre" name="genre" value="autre" />
+          <label for="autre">Autre</label>
+        </div>
+
+        <h3>Séléction</h3>
+        <select id="selection" name="selection">
+          <option value="">Choisissez une option</option>
+          <option value="option1">Option 1</option>
+          <option value="option2">Option 2</option>
+          <option value="option3">Option 3</option>
+        </select>
+        <div class="error-message" id="selection-error"></div>
+
+        <button type="submit">Envoyer</button>
+      </form>
+    </main>
+
+    <footer>
+      <a href="https://www.facebook.com" class="icon-button">
+        <i class="fa-brands fa-facebook" style="color: #f7f7f7"></i>
+        <!-- Lien vers Facebook avec icône -->
+      </a>
+      <a href="https://twitter.com" class="icon-button">
+        <i class="fa-brands fa-twitter" style="color: #f4f5f5"></i>
+        <!-- Lien vers Twitter avec icône -->
+      </a>
+      <a href="https://instagram.com" class="icon-button">
+        <i class="fa-brands fa-instagram" style="color: #fffefe"></i>
+        <!-- Lien vers Instagram avec icône -->
+      </a>
+    </footer>
+    <script src="menu.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

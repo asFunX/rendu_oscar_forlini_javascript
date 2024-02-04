@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libraries</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.1/simple-lightbox.min.css">
+    <link rel="stylesheet" href="style_portfolio.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+</head>
+<body>
+  <nav>
+    <ul class="nav-menu" id="nav-menu">
+      <!-- Barre de navigation avec des liens vers différentes pages -->
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="about.html">À Propos</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="menu-burger" id="burger">
+    <div class="barre"></div>
+    <div class="barre"></div>
+    <div class="barre"></div>
+  </div>
+    <div class="swiper mon-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-image: url(Image1.png);background-position:center 22%;">
+            <p class="title">Baccalauréat général</p>
+            <p class="subtitle">Année 2023</p>
+          </div>
+          <div class="swiper-slide" style="background-image: url(Image2.jpg);background-position:center 17%;">
+            <p class="title">Coach esportif</p>
+            <p class="subtitle">LDV esport</p> 
+          </div>
+          <div class="swiper-slide" style="background-image: url(Image3.jpg);background-position:center 35%;">
+            <p class="title">Marketing & producing JV </p>
+            <p class="subtitle">promo 2028</p>
+          </div>
+        </div>
+        
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.1/simple-lightbox.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/filterizr/2.2.4/vanilla.filterizr.min.js"></script>
+      <div class="filters">
+        <ul>
+            <li data-filter="all" class="active">Tous les projets</li>
+            <li data-filter="cd">Game Design</li>
+            <li data-filter="cdw">Marketing Jeux vidéo</li>
+            <li data-filter="dw">Com & ebuisness</li>
+            <li data-filter="3d">Création 3D</li>
+            <li data-filter="jv">Créative Personnal</li>
+        </ul>
+      </div>
+      
+      <main class="portfolio">
+        <div class="portfolio-elements">
+          <div class="card filtr-item" data-category="cd">
+              <div class="card-header">
+                  <p class="card-title">Game Design</p>
+                  <p class="card-axe">Fondamentaux du Game Design 17/20</p>
+              </div>
+              <a href="gamedesign.png">
+                  <img src="gamedesign.png" alt="Motion">
+              </a>
+
+          </div>
+          <div class="card filtr-item" data-category="cdw">
+              <div class="card-header">
+                  <p class="card-title">Webmarketing</p>
+                  <p class="card-axe">Marketing & producing Jeu vidéo 17/20</p>
+              </div>
+              <a href="Webmarketing.png">
+                  <img src="Webmarketing.png" alt="Showreel">
+              </a>
+          </div>
+
+          <div class="card filtr-item" data-category="dw">
+            <div class="card-header">
+                <p class="card-title">Communication & ebuisness</p>
+                <p class="card-axe">Fondamentaux de la Communication 18/20</p>
+            </div>
+            <a href="affiche_defense_animal_3.png">
+                <img src="affiche_defense_animal_3.png" alt="Showreel">
+            </a>
+          </div>
+
+          <div class="card filtr-item" data-category="3d">
+            <div class="card-header">
+                <p class="card-title">Texturing et Modélisation</p>
+                <p class="card-axe">Animation 3D 15/20</p>
+            </div>
+            <a href="Iso.png">
+                <img src="Iso.png" alt="Showreel">
+            </a>
+          </div>
+
+          <div class="card filtr-item" data-category="jv">
+            <div class="card-header">
+                <p class="card-title">Creative Personnal identity</p>
+                <p class="card-axe">Charte graphique logo 19/20</p>
+            </div>
+            <a href="creative.png">
+                <img src="creative.png" alt="Showreel">
+            </a>
+          </div>
+      </main>
+         
+    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="main_portoflio.js"></script>
+</body>
+<footer>
+  <a href="https://www.facebook.com" class="icon-button">
+    <i class="fa-brands fa-facebook" style="color: #f7f7f7"></i>
+    <!-- Lien vers Facebook avec icône -->
+  </a>
+  <a href="https://twitter.com" class="icon-button">
+    <i class="fa-brands fa-twitter" style="color: #f4f5f5"></i>
+    <!-- Lien vers Twitter avec icône -->
+  </a>
+  <a href="https://instagram.com" class="icon-button">
+    <i class="fa-brands fa-instagram" style="color: #fffefe"></i>
+    <!-- Lien vers Instagram avec icône -->
+  </a>
+  <p>© 2023 Oscar Forlini</p>
+  <!-- Droits d'auteur et année -->
+</footer>
+</html>
